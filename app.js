@@ -12,11 +12,16 @@ for (var i = 0; i < numOfQuestions; i++) {
   if (answer === correctAns[i]) {
     alert(corrResponses[i]);
     countRight++;
-  } else if (answer !== 'y' || answer !== 'n') {
-    alert('stop breaking rules, no points for you');
-  } else {
-    alert(wrongResponses[i]);
+  } else if (answer !== 'y') {
+    if (answer !== 'n') {
+      alert('stop breaking rules, no points for you');
+    }
+  } else if (answer !== 'n') {
+    if (answer !== 'y') {
+      alert('stop breaking rules, no points for you');
+    }
   }
+  alert(wrongResponses[i]);
 }
 
 // var prompt1 = prompt('does james snowboard? y/n').toLowerCase();
