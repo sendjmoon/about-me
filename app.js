@@ -17,7 +17,7 @@ questionYN = function(q) {
   } else {
     alert(wrongResponses[q]);
   }
-}
+};
 
 questionGuessNum = function(q) {
   var numChances = 4;
@@ -37,12 +37,12 @@ questionGuessNum = function(q) {
           alert (wrongResponses[q][1]);
         }
       } else {
-        alert(wrongResponses[q][2])
+        alert(wrongResponses[q][2]);
       }
     }
   }
   isRight = true;
-}
+};
 
 questionCities = function(q) {
   var cityChances = 6;
@@ -66,9 +66,9 @@ questionCities = function(q) {
     if (wrong === true) {
       alert(wrongResponses[6]);
     }
-     wrong = false;
+    wrong = false;
   }
-}
+};
 questionYN(0);
 questionYN(1);
 questionYN(2);
